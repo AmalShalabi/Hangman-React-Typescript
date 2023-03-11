@@ -80,10 +80,11 @@ const LEFT_LEG = (
   />
 );
 const BODY_PARTS=[HEAD,BODY,RIGHT_ARM,LEFT_ARM,RIGHT_LEG,LEFT_LEG]
+
 type HangmanDrawingProps={
   numberOfGusses:number
 }
-const HangmanDrwaing = ({numberOfGusses}:HangmanDrawingProps) => {
+function HangmanDrwaing  ({numberOfGusses}:HangmanDrawingProps) {
   return (
     <div style={{ position: "relative" }}>
       {BODY_PARTS.slice(0,numberOfGusses)}
@@ -107,13 +108,13 @@ const HangmanDrwaing = ({numberOfGusses}:HangmanDrawingProps) => {
       />
       <div
         style={{
-          height: "100px",
+          height: "155px",
           width: "5px",
           background: "black",
           marginLeft: "90px",
         }}
       />
-      <div style={{ height: "5px", width: "150px", background: "black" }} />
+      <div style={{ height: "5px", width: "120px", background: "black" }} />
     </div>
   );
 };
