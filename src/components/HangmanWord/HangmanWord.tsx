@@ -8,11 +8,12 @@ const HangmanWord = ({guessedLetters,wordToGuess}:HangmanWordProps) => {
     <div
       style={{
         display: "flex",
-        gap: ".25em",
+        gap: ".45em",
         fontSize: "3rem",
         fontWeight: "bold",
         textTransform: "uppercase",
         fontFamily: "monospace",
+        marginTop:"3rem"
       }}
     >
       {wordToGuess.split("").map((letter, index) => (

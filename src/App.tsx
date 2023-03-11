@@ -6,8 +6,7 @@ import words from "./wordList.json";
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(() => {
-    return "test"
-    // return words[Math.floor(Math.random() * words.length)];
+    return words[Math.floor(Math.random() * words.length)];
   });
   const [guessedLetters, setGuessLetters] = useState<string[]>(["a","w", "k","z","l","f"]);
   console.log(wordToGuess);
