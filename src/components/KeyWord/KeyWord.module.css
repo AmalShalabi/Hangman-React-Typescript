@@ -12,17 +12,21 @@
     color: black;
 }
 .btn.active{
-    background-color: hsl(200, 100%, 50%);
+    background-color: hsl(143, 76%, 46%);
+    border-color:hsl(143, 76%, 46%) ;
     color: white;
 
 }
 
 .btn.inactive{
     opacity: .3;
+     background-color: hsl(352, 87%, 48%);
+    border-color:hsl(352, 87%, 48%) ;
+    color: white;
 }
 
 
 .btn:hover:not(:disabled),
 .btn:focus:not(:disabled){
-    background-color: hsl(200, 100%, 75%);
+    background-color:  hsl(143, 68%, 82%);
 }
