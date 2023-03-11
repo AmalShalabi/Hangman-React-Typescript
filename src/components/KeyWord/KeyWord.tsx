@@ -38,7 +38,7 @@ const KeyWord = () => {
       }}
     >
       {KEYS.map((key) => {
-        return <button className={styles.btn} key={key}>{key}</button>;
+        return <button  className={`${styles.btn} `} key={key}>{key}</button>;
       })}
     </div>
   );
