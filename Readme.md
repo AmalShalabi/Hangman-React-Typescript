@@ -1,4 +1,5 @@
-# Hangman Game with React and TypeScript
+# Hangman Game with React and TypeScript <a href="https://amalshalabi.github.io/Hangman-React-Typescript/" target="_blank">Demo</a>  
+
 This project is a web-based Hangman game built with React and TypeScript. The game is a classic word-guessing game in which players must guess letters to fill in the blank spaces of a secret word, while trying to avoid getting "hanged" by guessing too many incorrect letters.
 
 ## Getting Started
