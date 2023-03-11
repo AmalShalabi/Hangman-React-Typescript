@@ -29,6 +29,7 @@ const KEYS = [
 ];
 
 type KeyboardProps = {
+  disabled?:boolean;
   activeLetters: string[];
   inactiveLetters: string[];
   addGuessedLetter: (letter: string) => void;
@@ -37,6 +38,7 @@ type KeyboardProps = {
 const KeyWord = ({
   activeLetters,
   inactiveLetters,
+  disabled=false,
   addGuessedLetter,
 }: KeyboardProps) => {
   return (
@@ -56,7 +58,7 @@ const KeyWord = ({
             className={`${styles.btn} ${isActive ? styles.active : ""} ${
               isInactive ? styles.inactive : ""
             }`}
-            disabled={isInactive || isActive}
+            disabled={isInactive || isActive|| disabled}
             key={key}
           >
             {key}
