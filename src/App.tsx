@@ -6,9 +6,10 @@ import words from "./wordList.json";
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(() => {
-    return words[Math.floor(Math.random() * words.length)];
+    return "test"
+    // return words[Math.floor(Math.random() * words.length)];
   });
-  const [guessedLetters, setGuessLetters] = useState<string[]>([]);
+  const [guessedLetters, setGuessLetters] = useState<string[]>(["a","w", "k","z","l","f"]);
   console.log(wordToGuess);
 
   const incorrectLetters = guessedLetters.filter(
@@ -28,7 +29,7 @@ function App() {
     >
       <div style={{ fontSize: "2rem", textAlign: "center" }}>Lose Win</div>
       <HangmanDrwaing numberOfGusses={incorrectLetters.length} />
-      <HangmanWord />
+      <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
       <div style={{ alignSelf: "stretch" }}>
         <KeyWord />
       </div>
