@@ -1,5 +1,4 @@
 import styles from "./KeyWord.module.css";
-
 const KEYS = [
   "a",
   "b",

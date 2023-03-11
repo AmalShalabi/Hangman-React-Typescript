@@ -1,7 +1,7 @@
 import { useState } from "react";
-import HangmanDrwaing from "./components/HangmanDrwaing";
-import HangmanWord from "./components/HangmanWord";
-import KeyWord from "./components/KeyWord";
+import HangmanDrwaing from "./components/HangmanDrwaing/HangmanDrwaing";
+import HangmanWord from "./components/HangmanWord/HangmanWord";
+import KeyWord from "./components/KeyWord/KeyWord";
 import words from "./wordList.json";
 
 function App() {
